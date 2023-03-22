@@ -1,0 +1,8 @@
+# OVERVIEW
+In this project, I used logistic regression to create a classification model. A dataset can be analyzed using the statistical technique of logistic regression if one or more independent factors affect the outcome and  its  dependent variable is binary. The dependent variable has a binary value of 0 (a negative result) or 1 (a positive result) (positive outcome). In this instance, the model foretells whether or not an earthquake would cause significant damage to a building.
+
+The wrangle function developed in the wrangling notebook was used to import and wrangle the data. A binary target was developed throughout the cleaning procedure to show if a building had sustained significant damage or not. Leaky columns, which are those that have data in them but are only accessible after the target is known, were also found and eliminated. Columns having a high number of unique values, known as high cardinality columns, were also found and handled properly.We also removed a column due to multicollinearity.
+
+The performance metric employed was accuracy, and the data were split 80:20 between training (0.8% of the data) and testing (0.2% of the data). I used OneHotEncoder to handle categorical variables during the model-building process, and I set the max iter on logistic regression to 1000 to assure convergence. The training and test results exceeded the starting point score.
+
+I then used the model's feature importances and generated a series called odds ratio to examine which factors affected whether a building would sustain serious damage.
